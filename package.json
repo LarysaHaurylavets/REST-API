@@ -9,6 +9,7 @@
   "author": "Larysa",
   "license": "ISC",
   "devDependencies": {
+    "chai": "^4.1.1",
     "jasmine": "^2.8.0",
     "protractor": "^5.1.2",
     "request": "^2.81.0"
