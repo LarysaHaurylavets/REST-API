@@ -1,0 +1,16 @@
+{
+  "name": "rest",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "jasmine"
+  },
+  "author": "Larysa",
+  "license": "ISC",
+  "devDependencies": {
+    "jasmine": "^2.8.0",
+    "protractor": "^5.1.2",
+    "request": "^2.81.0"
+  }
+}
