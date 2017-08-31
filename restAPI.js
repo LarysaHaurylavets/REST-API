@@ -1,8 +1,8 @@
 'use strict';
 
 const request = require('request');
+//const base_url = 'https://jsonplaceholder.typicode.com/users';
 const base_url = 'https://jsonplaceholder.typicode.com/users';
-
 
 describe('testing rest web-service', function (){
 	
@@ -17,13 +17,21 @@ describe('testing rest web-service', function (){
 
  	it('should the content-type header exists in the obtained response', function(done){
  		request.get(base_url, function(error,response,body){
- 			console.log('Content-Type: '+ response.headers['Content-Type']);
+ 			console.log('Content-Type: '+ JSON.stringify(response.headers));
  			done();
  		});
-
- 		//
+ 		
  	});
 
+ 	it('should the content-type header exists in the obtained response', function(done){
+ 		request.get(base_url, function(error,response,body){
+ 			console.log('body:', body);
+ 			done();
+ 		});
+ 		
+ 	});
+
+ 	
 });
 
 //in cmd types jasmine restAPI.js
