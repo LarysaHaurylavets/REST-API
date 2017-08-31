@@ -15,14 +15,26 @@ describe('testing rest web-service', function (){
  		});
  	});
 
- 	it('should the content-type header exists in the obtained response', function(done){
+//the content-type header exists in the obtained response
+ 	it('should the content-type header exists', function(done){
  		request.get(base_url, function(error,response,body){
- 			console.log('Content-Type: '+ JSON.stringify(response.headers));
+ 			//console.log('Content-Type: '+ JSON.stringify(response.headers));
+ 			expect(JSON.stringify(response.headers)).not.toBe(null);
  			done();
  		});
  		
  	});
 
+//the value of the content-type header is application/json
+	it('should the value of the content-type header is application/json', function(done){
+ 		request.get(base_url, function(error,response,body){
+ 			expect(JSON.stringify(response.headers)).toContain('application/json');
+ 			done();
+ 		});
+ 		
+ 	});
+
+//the content of the response body is the array of 10 users
  	it('should the content-type header exists in the obtained response', function(done){
  		request.get(base_url, function(error,response,body){
  			console.log('body:', body);
