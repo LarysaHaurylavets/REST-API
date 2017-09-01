@@ -25,10 +25,11 @@ describe('testing rest web-service', function (){
  		
  	});
 
-//the value of the content-type header is application/json
+//the value of the content-type header is application/json; charset=utf-8
 	it('should the value of the content-type header is application/json', function(done){
  		request.get(base_url, function(error,response,body){
- 			expect(JSON.stringify(response.headers)).toContain('application/json');
+ 			let header=response.headers['content-type'];
+ 			expect(header).toEqual('application/json; charset=utf-8'); 
  			done();
  		});
  		
