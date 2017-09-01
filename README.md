@@ -1,11 +1,11 @@
 # REST-API
 
 1. a test to verify an http status code
-  o	Validation: status code of the obtained response is 200 OK
+  : status code of the obtained response is 200 OK
   
 2. a test to verify an http response header
-  o	Validation: - the content-type header exists in the obtained response
+  : - the content-type header exists in the obtained response
                 - the value of the content-type header is application/json; charset=utf-8
 
 3. a test to verify an http response body
-  o	Validation: the content of the response body is the array of 10 users
+  : the content of the response body is the array of 10 users
