@@ -3,7 +3,6 @@
 const request = require('request');
 const base_url = 'https://jsonplaceholder.typicode.com/users';
 //const should = require('chai').should();
-var date;
 
 describe('testing rest web-service', function (){
 	
@@ -39,7 +38,7 @@ describe('testing rest web-service', function (){
  	it('should the content-type header exists in the obtained response', function(done){
  		request.get(base_url, function(error,response,body){ 
  			if(response.statusCode==200){
- 				date=JSON.parse(body);
+ 				let date=JSON.parse(body);
  				let countUsers=date.length;
  				expect(countUsers).toEqual(10);
  			};
