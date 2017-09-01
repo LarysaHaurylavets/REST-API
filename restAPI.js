@@ -51,5 +51,5 @@ describe('testing rest web-service', function (){
  	
   });
 
-//in cmd types jasmine restAPI.js
+//for running test in cmd types npm test
 

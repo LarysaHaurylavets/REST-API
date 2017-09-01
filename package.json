@@ -4,14 +4,13 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "jasmine"
+    "test": "jasmine restAPI.js"
   },
   "author": "Larysa",
   "license": "ISC",
   "devDependencies": {
     "chai": "^4.1.1",
-    "jasmine": "^2.8.0",
-    "protractor": "^5.1.2",
+    "jasmine": "^2.8.0",    
     "request": "^2.81.0"
   }
 }
