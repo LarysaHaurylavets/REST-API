@@ -13,3 +13,5 @@
 3. A test to verify an http response body: 
     
     - the content of the response body is the array of 10 users
+
+for running test in cmd types npm test
